@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualPlayer", "EqualPlayer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePower1", "FilePower1\FilePower1.csproj", "{3A4686EE-918F-468F-99C6-845A507DE10F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePower2", "FilePower2\FilePower2.csproj", "{77AF6209-28A7-4F98-8B86-E863500069F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{3A4686EE-918F-468F-99C6-845A507DE10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A4686EE-918F-468F-99C6-845A507DE10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A4686EE-918F-468F-99C6-845A507DE10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AF6209-28A7-4F98-8B86-E863500069F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AF6209-28A7-4F98-8B86-E863500069F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AF6209-28A7-4F98-8B86-E863500069F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AF6209-28A7-4F98-8B86-E863500069F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
