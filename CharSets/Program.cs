@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.IO;
 
 namespace CharSets
@@ -18,15 +17,15 @@ namespace CharSets
                 
                 foreach (char letter in wRizz)
                 {
-                    if (!chars1.Contains(letter))
+                    if (!char.IsWhiteSpace(letter) && !chars1.Contains(letter))
                     {
                         chars1.Add(letter);
                     }
                 }
             }
-
+        
             chars1.Sort();
-
+            
             foreach(char letter in chars1)
             {
                 Console.WriteLine(letter);
