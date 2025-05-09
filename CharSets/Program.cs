@@ -10,7 +10,7 @@ namespace CharSets
         private static void Main(string[] args)
         {
 
-            HashSet<char> chars = new HashSet<char>();
+            List<char> chars1 = new List<char>();
 
             foreach(string arg in args)
             {
@@ -18,22 +18,18 @@ namespace CharSets
                 
                 foreach (char letter in wRizz)
                 {
-                    if (letter.ToString() == null) { break; }
-                    chars.Add(letter);
+                    if (!chars1.Contains(letter))
+                    {
+                        chars1.Add(letter);
+                    }
                 }
             }
 
-            List<char> chars1 = new List<char>(chars);
             chars1.Sort();
 
             foreach(char letter in chars1)
             {
-                if (letter != ' ')
-                {
-                    Console.WriteLine(letter);
-                }
-                else {continue;}
-
+                Console.WriteLine(letter);
             }
         }
     }
