@@ -19,6 +19,7 @@ namespace CharSets
                 
                 foreach (char letter in wRizz)
                 {
+                    if (letter.ToString() == null) { break; }
                     chars.Add(letter);
                 }
             }
