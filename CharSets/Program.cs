@@ -9,19 +9,17 @@ namespace CharSets
     {
         private static void Main(string[] args)
         {
-            string thing;
-            char[] c;
+
+            char[] c = new char[1];
             HashSet<char> chars = new HashSet<char>();
 
             foreach(string arg in args)
             {
-                using StreamReader readIt = new StreamReader(arg);
-
-                while( ( thing = readIt.ReadLine()) != null)
+                string wRizz = File.ReadAllText(arg);
+                
+                foreach (char letter in wRizz)
                 {
-                    c = thing.ToCharArray();
-                    if (c.Length > 1) { break; }
-                    chars.Add(c[0]);
+                    chars.Add(letter);
                 }
             }
 
