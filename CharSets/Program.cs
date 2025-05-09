@@ -32,7 +32,8 @@ namespace CharSets
                 {
                     continue;
                 }
-                Console.WriteLine(letter);
+                else {Console.WriteLine(letter);}
+                
             }
         }
     }
