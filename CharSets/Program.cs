@@ -28,12 +28,12 @@ namespace CharSets
 
             foreach(char letter in chars1)
             {
-                if (letter == ' ')
+                if (letter != ' ')
                 {
-                    continue;
+                    Console.WriteLine(letter);
                 }
-                else {Console.WriteLine(letter);}
-                
+                else {continue;}
+
             }
         }
     }
