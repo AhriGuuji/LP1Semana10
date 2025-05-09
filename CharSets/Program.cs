@@ -10,7 +10,6 @@ namespace CharSets
         private static void Main(string[] args)
         {
 
-            char[] c = new char[1];
             HashSet<char> chars = new HashSet<char>();
 
             foreach(string arg in args)
@@ -29,6 +28,10 @@ namespace CharSets
 
             foreach(char letter in chars1)
             {
+                if (letter == ' ')
+                {
+                    continue;
+                }
                 Console.WriteLine(letter);
             }
         }
