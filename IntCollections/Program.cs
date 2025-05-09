@@ -23,23 +23,10 @@ namespace IntCollections
                 hashSet.Add(i);
             }
             
-            PrintCollection(list);
-            PrintCollection(stack);
-            PrintCollection(queue);
-            PrintCollection(hashSet);
-        }
-
-        private static void PrintCollection<T>(IEnumerable<T> collection)
-        {
-            string fullName = collection.GetType().Name;
-            int backtickIndex = fullName.IndexOf('`');
-            if (backtickIndex > 0) fullName = fullName.Substring(0, backtickIndex);
-            StringBuilder stringBuilder = new StringBuilder($"{fullName}: ");
-            foreach (var item in collection)
-            {
-                stringBuilder.Append(item + ", ");
-            }
-            Console.WriteLine(stringBuilder.ToString().Substring(0, stringBuilder.Length - 2));
+            Console.WriteLine("List: " + String.Join(", ", list));
+            Console.WriteLine("Stack : " + String.Join(", ", stack));
+            Console.WriteLine("Queue : " + String.Join(", ", queue));
+            Console.WriteLine("Hashset : " + String.Join(", ", hashSet));
         }
         
     }
